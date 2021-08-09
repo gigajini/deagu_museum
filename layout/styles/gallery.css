@@ -1,0 +1,43 @@
+.search{
+    display: flex; 
+    padding: 30px 0 60px 0;
+    justify-content: center;
+}
+
+input,
+button{
+    border-style: none;
+}
+
+input{
+    width: 400px;
+    height: 38px;
+    border: 1px solid;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+button{
+    padding: 0 18px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: var(--Accent-color);
+    color: white;
+}
+
+/* 갤러리 */
+.piece{line-height: 1.3em; margin-top: 7px;}
+.artist{line-height: 2.2em;}
+
+.one_quarter>a>img{
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* 미디어쿼리 */
+
+@media screen and (min-width:180px) and (max-width:900px){
+    figure ul{text-align: center;}
+    
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+Template Name: Colossus
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>Colossus | Pages | Sidebar Left</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="../layout/styles/custom.css">
+<link rel="stylesheet" href="../layout/styles/education.css">
+</head>
+<body id="top">
+<!-- 해더영역######################################################################################### -->
+<div w3-include-html="header.html"></div>
+<div class="wrapper row2">
+  <div id="breadcrumb" class="clear"> 
+    <!-- ################################################################################################ -->
+    
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">교육 및 행사</a></li>
+    </ul>
+    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!--해더영역 끝######################################################################################## -->
+<div class="wrapper row3">
+  <main class="container clear"> 
+    <!--aside 영역##################################################################################### -->
+    <div class="sidebar one_quarter first"> 
+      <div w3-include-html="education_nav.html"></div> 
+    </div> 
+    <!-- aside 영역 끝####################################################################################### -->
+    <!-- 본문 시작#################################################################################### -->
+    <div class="content three_quarter"> 
+        <div class="wrrow2apper ">
+        <div class="gallery_wrap">
+          <div class="title_wrap">
+            <h1 class="ko_bold" style="padding: 0;">교육 및 행사</h1>
+          </div>
+        </div>
+        <div id="test">
+          <div id="cloneTest">
+            <p>반가워</p>
+            <div>dfefdf</div>
+          </div>
+        </div>
+    </div>
+    <!-- 본문끝 #################################################################################### -->
+  </div>
+  <div class="clear"></div>
+</main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div w3-include-html="footer.html"></div> 
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../layout/scripts/include.js"></script>
+<script>
+
+// test 변수에 복제 할 노드를 지정
+/*
+var test1 = test.cloneNode(true);
+var test2 = test.cloneNode(true);
+var test3 = test.cloneNode(true);
+var test4 = test.cloneNode(true);
+var test5 = test.cloneNode(true);
+var test6 = test.cloneNode(true);
+var test7 = test.cloneNode(true);
+var test8 = test.cloneNode(true);
+var test9 = test.cloneNode();
+var test10 = test.cloneNode();
+*/
+// 복사할 개수만큼 복제변수를 생성
+
+for(i=0;i<10;i++){
+  var test = document.getElementById('cloneTest');
+  var test01 = document.getElementById('test');
+
+  // true 로 설정시 자식 태그들까지 복사
+  let testClone = test.cloneNode(true);
+  test01.appendChild(testClone);
+}
+
+/*
+test01.appendChild(test1);
+test01.appendChild(test2);
+test01.appendChild(test3);
+test01.appendChild(test4);
+test01.appendChild(test5);
+test01.appendChild(test6);
+test01.appendChild(test7);
+test01.appendChild(test8);
+test01.appendChild(test9);
+test01.appendChild(test10);
+*/
+// 복제된 변수 test1, 2, 3를 body에 삽입
+</script>
+</body>
+</html>

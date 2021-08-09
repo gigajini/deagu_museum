@@ -1,0 +1,173 @@
+/* /////// 박물관소개 시작 ////// */
+.intro{height: 400px; position: relative;}
+.bg_box{
+    width: 55%; 
+    height: 310px; 
+    background-color: var(--Accent-color);
+    position: absolute;
+    right: 0;
+}
+.intro_img{
+    width: 95%; 
+    height: 240px; 
+    position: absolute;
+    top: 35px;
+    left: 5%;
+    left: 0;
+    z-index: 10;
+    vertical-align: middle;
+}
+.intro_img>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: (50%,50%);
+}
+
+
+.info_flex{display: flex; margin-bottom: 50px;}
+.info_title{width: 30%;}
+.info_text{width: 70%; padding-left: 80px;}
+.info_text>h5{margin-bottom: 5px;}
+
+/* margin */
+.marginbottom_20{margin-bottom: 20px;}
+.marginbottom_30{margin-bottom: 30px;}
+
+.info_text>ul{padding-left: 10px; list-style: none;}
+.info_text>ul>li::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+    right: 10px;
+    width: 5px;
+    height: 5px;
+    background: var(--Accent-color);
+}
+
+
+/* /////// 박물관소개 끝 ////// */
+/* ////// 연혁 시작 ////// */
+.annals_container{
+    height: 1100px; 
+    position: relative;
+    top: 80px;
+}
+
+/* 연혁 이미지 */
+/*
+.annals_box{
+    width: 30%; 
+    height: 500px; 
+    position: absolute;
+    right: 0;
+    top: 10px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+.annals_img{
+    width: 30%; 
+    height: 500px; 
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    background-color: gray;
+}
+*/
+
+.annals_box{
+    width: 28%; 
+    height: 27%; 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #194540;
+    margin-left: 10px;
+}
+.annals_img{
+    width: 28%; 
+    height: 73%; 
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.annals_img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.row_line{
+    width: 1px; 
+    height: 1080px; 
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    background-color: black;
+    
+}
+
+
+
+
+/*
+.annals_point{
+    width: 10px; 
+    height: 10px; 
+    background-color: red;
+    position: relative;
+    left: 35px;
+    top: 22px;}
+*/
+
+.annals>h1::before{
+    content: "";
+    display: inline-block;
+    width: 13px; 
+    height: 13px; 
+    background-color: var(--Accent-color);
+    position: relative;
+    left: -20px;
+    top: -7px;
+}
+
+/* 연혁년도 */
+.annals{ margin-left: 70px; margin-bottom: 60px;}
+.annals>h1{font-size: 28px; margin: 0; margin-bottom: 5px; position: relative; left: -15px;}
+.annals>p{color: black;}
+
+
+/* ////// 연혁 끝 ////// */
+
+/* ////// 관람시간 시작 ////// */
+th{width: 35%;}
+th, td {padding: 10px 20px; vertical-align: middle;}
+
+.time_title{margin-top: 30px;}
+.time_title::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 18px;
+    background: var(--Accent-color);
+    vertical-align: -2px;
+    margin-right: 10px;
+}
+.margintop_60{margin-top: 60px;}
+/* ////// 관람시간 끝 ////// */
+
+/* 미디어쿼리 */
+@media screen and (min-width:180px) and (max-width:750px){
+    .annals_box,
+    .annals_img{display: none;}
+
+    .info_flex{display: block; margin-bottom: 80px;}
+    .info_title,
+    .info_text{width: 100%; padding: 0;}
+    .info_title>h1{text-align: center; margin-bottom: 60px;}
+
+}

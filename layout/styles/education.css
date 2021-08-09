@@ -1,0 +1,9 @@
+.box{width: 100px; height: 100px; background-color: pink;}
+
+#cloneTest {
+    margin: 1%;
+    width: 80px;
+    height: 80px;
+    background: #000;
+    display: inline-block;
+  }

@@ -1,0 +1,16 @@
+.display_list>ul>li{width: 50%;}
+.display_list>ul>li>figure{margin: 10px; border: 1px solid black;}
+.display_list>ul>li>figure>figcaption{background-color: white;}
+
+
+.active{display: none;}
+
+/* 지난전시 */
+.before{filter: brightness(50%);}
+.before_hover{pointer-events: none;}
+
+/* 미디어쿼리 */
+@media screen and (max-width:900px){
+    .display_list>ul>li{width: 100%;}
+    
+}

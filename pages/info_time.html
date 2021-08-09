@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="../layout/styles/custom.css">
+    <link rel="stylesheet" href="../layout/styles/info.css">
+    <title>Document</title>
+</head>
+<body id="top">
+<!-- 해더영역######################################################################################### -->
+<div w3-include-html="header.html"></div>
+<div class="wrapper row2">
+    <div id="breadcrumb" class="clear"> 
+      <!-- ################################################################################################ -->
+      
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">박물관소개</a></li>
+        <li><a href="#">관람안내</a></li>
+      </ul>
+      
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+<!--해더영역 끝######################################################################################## -->
+<div class="wrapper row3">
+    <main class="container clear"> 
+      <!--aside 영역##################################################################################### -->
+      <div class="sidebar one_quarter first"> 
+        <div w3-include-html="info_nav.html"></div> 
+      </div> 
+      <!-- aside 영역 끝####################################################################################### -->
+      <!-- 본문 시작#################################################################################### -->
+      <div class="content three_quarter"> 
+        <div class="title_wrap">
+            <h1 class="ko_bold" style="padding: 0;">관람안내</h1>
+        </div>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>평일</th>
+                    <td>09:00 ~ 18:00</td>             
+                </tr>
+                <tr>
+                    <th>토요일/일요일/공휴일<br>(코로나19상황으로 18:00 까지 관람 가능)</th>
+                    <td>09:00 ~ 18:00</td>              
+                </tr>
+                <tr>
+                    <th>토요야간개장<br>(코로나19상황으로 18:00 까지 관람 가능)</th>
+                    <td>09:00 ~ 21:00 (4월~10월중 매주 토요일)</td>        
+                </tr>
+                <tr>
+                    <th>문화가 있는 날<br>(코로나19상황으로 18:00 까지 관람 가능)</th>
+                    <td>09:00 ~ 21:00 (매월 마지막주 수요일이 포함된 주의 토요일)</td>              
+                </tr>
+                <tr>
+                    <td colspan="2">관람종료시간 30분 전까지만 입장 할 수 있습니다.<br>
+                        (코로나19 상황으로 인해 현재는 평일/토요일/일요일/공휴일은 09:00~18:00 까지 관람 가능합니다.)</td>              
+                </tr>
+            </table>
+            <h1 class="margintop_60 time_title ko_medium ko_20">휴관일</h1>
+            <p>국립대구박물관 연중휴관일은 1월 1일, 설날, 추석, 매주 월요일입니다.
+                (단, 월요일이 공휴일, 대체휴일일 때에는 공휴일, 대체휴일 다음의 첫 번째 평일
+                [「관공서의 공휴일에 관한 규정」제2조,제3조])</p>
+            <h1 class="time_title ko_medium ko_20">관람요금 : 무료</h1>
+            <p>대상 : 상설전시 및 기획전시 * 단, 유료 특별 · 기획전시 제외</p>
+            <h1 class="time_title ko_medium ko_20">단체관람</h1>
+            <p>단체관람(20인 이상)의 경우는 사전에 관람예약을 해 주시기 바랍니다.</p>
+            <p>우리문화체험실 아롱다롱방, 생각놀이방·영상체험방은 별도 예약 필수입니다.</p>
+        </div>
+      </div>       <!-- 본문끝 #################################################################################### -->
+      <div class="clear"></div>
+    </main>
+  </div>
+<div w3-include-html="footer.html"></div> 
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../layout/scripts/include.js"></script>
+</body>
+</html>
