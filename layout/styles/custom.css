@@ -3,13 +3,14 @@
 
 .ko{ font-family: 'Noto Sans KR', sans-serif;}
 
-.ko_bold{ font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 24px;}
+.ko_bold{ font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 27px;}
 
 .ko_medium{ font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 16px;}
 
 .ko_light{ font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 14px;}
 
 .ko_15{font-size: 15px;}
+.ko_16{font-size: 16px;}
 .ko_18{font-size: 18px;}
 .ko_20{font-size: 20px;}
 .ko_24{font-size: 24px;}
@@ -21,10 +22,16 @@ p{margin: 0; line-height: 1.8em;}
     font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 14px;
 }
 
+/*sub_nav 제목 */
+.sub_title{
+    padding: 0; 
+    margin-bottom: 25px;
+}
+
 /* 컬러 */
 
 :root{
-    --Accent-color:#49c5b6;
+    --Accent-color:#37BFB8; /* 원본 : #49c5b6 수정:#3BCCC5 37BFB8 난색:B32C1B  BCCC5*/
 }
 
 .f_black{color: black;}
@@ -122,13 +129,13 @@ p{margin: 0; line-height: 1.8em;}
 }
 
 .btn_item{
-    border: 1px solid #050505;
+    border: 1px solid #555;
     height: 50px;
     position: relative;
 }
 
 .btn_item:hover{
-    background-color:#91D9D0;
+    background-color:var(--Accent-color);
     cursor: pointer;
 }
 

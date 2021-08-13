@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6, .heading{color:#242424; border-color:inherit;}
 .row3{color:#888888; background-color:#f5f7fa; border-color:black;}
 .row4{color:#888888; background-color:#e4e7eb;}
 .row5, .row5 a{color:#fff; background-color:#7b8794;}
-.row6{color:#FFFFFF; background-color:var(--Accent-color);}
+.row6{color:#FFFFFF; background-color:#A88847;} /* A88847 */
 .row6 a{color:var(--Accent-color); background-color:#FFFFFF;}
 
 
@@ -373,7 +373,7 @@ table a, #comments a{background-color:inherit;}
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:978px) {
-	#header, #services, #cta, #breadcrumb, .container, #footer, #copyright{max-width:978px;}
+	#header, #services, #cta, #breadcrumb, .container, #footer, #copyright{/*max-width:978px;*/max-width:1150px;}
 }
 
 

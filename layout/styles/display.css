@@ -2,6 +2,9 @@
 .display_list>ul>li>figure{margin: 10px; border: 1px solid black;}
 .display_list>ul>li>figure>figcaption{background-color: white;}
 
+/* 타이틀 마진 조정*/
+.display_margin{margin-bottom: 70px;}
+
 
 .active{display: none;}
 
@@ -12,5 +15,6 @@
 /* 미디어쿼리 */
 @media screen and (max-width:900px){
     .display_list>ul>li{width: 100%;}
-    
+    .display_list>ul>li>figure{width: 100%;}
+    .title_wrap{margin-top: 70px; margin-bottom: 30px;}
 }

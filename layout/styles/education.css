@@ -1,9 +1,77 @@
-.box{width: 100px; height: 100px; background-color: pink;}
 
-#cloneTest {
-    margin: 1%;
-    width: 80px;
-    height: 80px;
-    background: #000;
-    display: inline-block;
+  .boxes{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+    border: 1px solid #888;
+    cursor: pointer;
   }
+  .boxes:hover{
+    border: 1px solid black;
+    box-shadow: 4px 4px rgb(105, 105, 105);
+  }
+
+
+  .boxes>img{
+    width: 200px; 
+    height: 200px; 
+    object-fit: contain;
+  }
+  
+  .boxes>div{padding:15px 20px; position: relative; width: 100%;}
+  .list{position: absolute; bottom: 0;}
+  .list>ul{width: 500px; padding-left: 0;}
+  .list>ul>li{list-style: none; display: inline-block; margin-right: 30px;}
+
+  .date,.age{color: #555;}
+
+/* 모집상태 */
+  .hiring{
+    width: 75px;
+    height: 75px;
+    background-color: var(--Accent-color);
+    position: absolute; 
+    right: 0; 
+    bottom: 0; 
+  }
+  .hiring>p,
+  .hiring_end>p{text-align: center; line-height: 75px; color: white;}
+  
+.hiring_end{
+  background-color: #555;
+  width: 80px;
+  height: 80px;
+  position: absolute; 
+  right: 0; 
+  bottom: 0; 
+}
+
+/* 버튼 */
+.button_box{text-align: center; margin-top: 50px; margin-bottom: 50px;}
+.button_box>button{
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin: 0 3px;
+  border: none;
+  background-color: #53637A;
+  color: white;
+  cursor: pointer;
+}
+
+.button_box>button:hover{
+  background-color: var(--Accent-color);
+}
+
+
+
+/* 미디어쿼리 */
+@media screen and (min-width:180px) and (max-width:750px){
+  .list>ul>li{display: block;}
+  .hiring,
+  .hiring_end{display: none;}
+  img{display: none;}
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script> -->
+
+</head>
+<body>
+    <div class="test"></div>
+
+</body>
+
+<script>
+
+let TestObj1 = {
+    title : '제목1',
+    subTitle : '부제1',
+    content : '내용1',
+    link : 'https://www.google.com/'
+}; 
+let TestObj2 = {
+    title : '제목2',
+    subTitle : '부제2',
+    content : '내용2',
+    link : 'https://www.naver.com/'
+}; 
+let TestObj3 = {
+    title : '제목3',
+    subTitle : '부제3',
+    content : '내용3'
+}; 
+let TestObj4 = {
+    title : '제목4',
+    subTitle : '부제4',
+    content : '내용4'
+}; 
+let TestObj5 = {
+    title : '제목4',
+    subTitle : '부제5',
+    content : '내용5'
+}; 
+let TestObj6 = {
+    title : '제목6',
+    subTitle : '부제6',
+    content : '내용6'
+}; 
+let arrayObj = [TestObj1,TestObj2,TestObj3,TestObj4,TestObj5,TestObj6];
+
+let test = document.getElementsByClassName('test');
+
+
+let str = "";
+for(let i = 0 ; i < arrayObj.length ; i++){
+    str += `
+            <ul>
+                <li>${arrayObj[i].title}</li>
+                <li>${arrayObj[i].subTitle}</li>
+                <li>${arrayObj[i].content}</li>
+                <li><a href = ${arrayObj[i].link}>클릭</a></li>
+            </ul>
+        `
+}
+
+$('.test').html(str); 
+
+
+
+
+</script>
+</html>

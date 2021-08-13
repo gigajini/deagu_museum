@@ -25,19 +25,41 @@ button{
     color: white;
 }
 
+/* 타이틀 밑줄 */
+#gallery>.header>.title_wrap{position: relative;}
+.title_wrap>a>h1::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--Accent-color);
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+
+
 /* 갤러리 */
 .piece{line-height: 1.3em; margin-top: 7px;}
 .artist{line-height: 2.2em;}
 
 .one_quarter>a>img{
     height: 300px;
+    width: 100%;
     object-fit: cover;
 }
 
 
 /* 미디어쿼리 */
 
-@media screen and (min-width:180px) and (max-width:900px){
-    figure ul{text-align: center;}
-    
+@media screen and (min-width:750px) and (max-width:940px){
+    .one_quarter {width: 50%; margin: 0; padding-left: 20px;}    
+}
+
+@media screen and (min-width:180px) and (max-width:750px){
+    .btn_group{position: static; margin-top: 20px;}
+    .footer_flex{flex-direction: column;}
+    .footer_flex div{margin-top: 20px;}
+    .footer_nav>ul>li{clear: both;}
 }
